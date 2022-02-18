@@ -16,6 +16,9 @@
 		6A06703E27BEE3670073B205 /* PortafolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A06703D27BEE3670073B205 /* PortafolioView.swift */; };
 		6A06704027BEE9580073B205 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A06703F27BEE9580073B205 /* XMarkButton.swift */; };
 		6A06704227BF0D1B0073B205 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A06704127BF0D1B0073B205 /* CoinLogoView.swift */; };
+		6A06704527BF3D0A0073B205 /* PortafolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A06704327BF3D0A0073B205 /* PortafolioContainer.xcdatamodeld */; };
+		6A06704727BF3DEF0073B205 /* PortafolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A06704627BF3DEF0073B205 /* PortafolioDataService.swift */; };
+		6A06704927BF7E960073B205 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A06704827BF7E960073B205 /* HapticManager.swift */; };
 		6A26E5E827B35558001A68E2 /* CrytoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E5E727B35558001A68E2 /* CrytoWalletApp.swift */; };
 		6A26E5EA27B35558001A68E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E5E927B35558001A68E2 /* ContentView.swift */; };
 		6A26E5EC27B3555F001A68E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A26E5EB27B3555F001A68E2 /* Assets.xcassets */; };
@@ -49,6 +52,9 @@
 		6A06703D27BEE3670073B205 /* PortafolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortafolioView.swift; sourceTree = "<group>"; };
 		6A06703F27BEE9580073B205 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		6A06704127BF0D1B0073B205 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
+		6A06704427BF3D0A0073B205 /* PortafolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortafolioContainer.xcdatamodel; sourceTree = "<group>"; };
+		6A06704627BF3DEF0073B205 /* PortafolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortafolioDataService.swift; sourceTree = "<group>"; };
+		6A06704827BF7E960073B205 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		6A26E5E427B35558001A68E2 /* CrytoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrytoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A26E5E727B35558001A68E2 /* CrytoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoWalletApp.swift; sourceTree = "<group>"; };
 		6A26E5E927B35558001A68E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -201,6 +207,7 @@
 				6A26E60527B39CCD001A68E2 /* CoinModel.swift */,
 				6A06703327BD99A10073B205 /* StaticModel.swift */,
 				6A06703927BE28990073B205 /* MarketDataModel.swift */,
+				6A06704327BF3D0A0073B205 /* PortafolioContainer.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +217,7 @@
 			children = (
 				6A482DD027B5C68E005BFC16 /* NetworkingManager.swift */,
 				6A482DD927B61C2E005BFC16 /* LocalFileManager.swift */,
+				6A06704827BF7E960073B205 /* HapticManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 				6AAD089F27B4F6790072AE9C /* CoinDataService.swift */,
 				6A482DD527B5FE10005BFC16 /* CoinImageService.swift */,
 				6A06703B27BE2C490073B205 /* MarketDataService.swift */,
+				6A06704627BF3DEF0073B205 /* PortafolioDataService.swift */,
 			);
 			name = Service;
 			path = Extensions;
@@ -326,12 +335,15 @@
 				6A482DD127B5C68E005BFC16 /* NetworkingManager.swift in Sources */,
 				6A06703E27BEE3670073B205 /* PortafolioView.swift in Sources */,
 				6A06703427BD99A10073B205 /* StaticModel.swift in Sources */,
+				6A06704527BF3D0A0073B205 /* PortafolioContainer.xcdatamodeld in Sources */,
+				6A06704727BF3DEF0073B205 /* PortafolioDataService.swift in Sources */,
 				6A06703827BDA27D0073B205 /* HomeStaView.swift in Sources */,
 				6A26E60327B396D3001A68E2 /* CircleButtonAnimationView.swift in Sources */,
 				6A482DD827B60050005BFC16 /* CoinImageViewModel.swift in Sources */,
 				6A493EC327B49ADD00F4A9F4 /* PreviewProvider.swift in Sources */,
 				6A493EC527B4CA7500F4A9F4 /* Double.swift in Sources */,
 				6A482DD627B5FE10005BFC16 /* CoinImageService.swift in Sources */,
+				6A06704927BF7E960073B205 /* HapticManager.swift in Sources */,
 				6A26E60627B39CCD001A68E2 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +547,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A06704327BF3D0A0073B205 /* PortafolioContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A06704427BF3D0A0073B205 /* PortafolioContainer.xcdatamodel */,
+			);
+			currentVersion = 6A06704427BF3D0A0073B205 /* PortafolioContainer.xcdatamodel */;
+			path = PortafolioContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6A26E5DC27B35558001A68E2 /* Project object */;
 }
