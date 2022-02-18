@@ -11,15 +11,21 @@ struct HomeView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
     @State private var showPortafolio: Bool = false
+    @State private var showPortafolioView: Bool = false
     
     var body: some View {
         ZStack {
             Color.theme.background
                 .ignoresSafeArea()
-            
+                .sheet(isPresented: $showPortafolioView, content: {
+                    PortafolioView()
+                        .environmentObject(vm)
+                })
+               
             
             VStack {
                 HomeHeader
+                HomeStaView(showPortfolio: $showPortafolio)
                 SearchBarView(searchText: $vm.searchText)
                 
                 
@@ -60,9 +66,16 @@ extension HomeView {
                                 "plus"
                                 
             )
+                .onTapGesture {
+                    if !showPortafolio {
+                        showPortafolioView.toggle()
+                    }
+                }
+               
            
                 .background(
                     CircleButtonAnimationView(animate: $showPortafolio)
+                   
                 )
              
                 
@@ -79,7 +92,9 @@ extension HomeView {
                 
                 .rotationEffect(Angle(degrees: showPortafolio ? 0: 180))
                 .onTapGesture {
+                    
                     withAnimation(.spring()) {
+                       
                         showPortafolio.toggle()
                     }
                 }
